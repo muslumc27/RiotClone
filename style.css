@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navContain{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(./image/convergence-ka-riotgames-3840x1600-update.png);
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.innerNavContain{
+    display: flex;
+    height: 100%;
+}
+.innerLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    width: 40%;
+    color: whitesmoke;
+}
+.innerLeft h1{
+    line-height: 95px;
+}
+.innerLeft h3{
+    width: 70%;
+    color: rgba(249,249,249,.6);
+    padding-bottom: 40px;
+}
+.innerLeft img{
+    width: 300px;
+    height: 100px;
+}
+#new{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 170px;
+    height: 70px;
+    border-radius: 17px;
+    border: 0;
+    background:linear-gradient(to right,rgb(122, 5, 5),red);
+    font-size: 2.3rem;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#new:hover{
+    box-shadow: 5px 7px 19px white;
+}
+/* Logo */
+#mainLogo {
+    width: 70px;
+    height: 30px;
+}
+
+#minifiedLogo {
+    width: 30px;
+    height: 30px;
+}
+
+/* Nav-Bar */
+nav {
+    display: flex;
+    align-items: center;
+    height: 95px;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigator {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigator ul {
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-evenly;
+}
+.navigator ul li{
+    color: whitesmoke;
+}
+.navigator form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+.navigator form i{
+    color: whitesmoke;
+}
+/* Dropdown-1 */
+#who{
+  position: relative;
+  cursor: pointer;
+  width: 30%;
+text-align: center;
+border-radius: 8px;
+}
+.innerDropdown1{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    padding-top:30px;
+    background-color: rgb(54, 53, 53);
+    border-top: 6px solid rgb(183, 53, 53);
+}
+.innerDropdown1 ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+.innerDropdown1 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: whitesmoke;
+}
+#who:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+#who:hover .innerDropdown1{
+    display: block;
+}
+/* Dropdown-2 */
+#join{
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+text-align: center;
+border-radius: 8px;
+}
+.innerDropdown2{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    padding-top:30px;
+    background-color: rgb(54, 53, 53);
+    border-top: 6px solid rgb(183, 53, 53);
+}
+.innerDropdown2 ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+.innerDropdown2 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: whitesmoke;
+}
+#join:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+#join:hover .innerDropdown2{
+    display: block;
+}
+/* Right-Side */
+#search{
+    width: 200px;
+    height: 40px;
+    border-radius: 18px;
+    font-size: 1.5rem;
+    padding-left: 17px;
+    border: 2px solid whitesmoke;
+}
+#signIn{
+    width: 130px;
+    height: 30px;
+    border-radius: 17px;
+    background-color: rgb(207, 31, 31);
+    color: black;
+    border: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#signIn:hover{
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+/* Language */
+#language{
+    position: relative;
+    font-size: 1.3rem;
+}
+.innerDropdown3{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    padding-top:30px;
+  
+}
+.innerDropdown3 ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    overflow: scroll;
+}
+.innerDropdown3 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#language:hover .innerDropdown3{
+    display: block;
+}
+/* Main-Title */
+.siteMain1{
+    padding: 50px;
+    background: linear-gradient(to right, rgb(65, 11, 11),black);
+}
+.mainTitleInfo{display: flex;}
+.mainTitle1{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    height: 140px;
+}
+.mainTitle1 h1{
+    font-size: 3.5rem;
+}
+.mainTitle1 button{
+    width: 160px;
+    height: 30px;
+    background-color: gray;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+.mainImageLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    background-image: url(./image/natalie-swanson-articleheader-16x9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 30px;
+    border-radius: 17px;
+}
+.mainImageLeft:hover{
+    border: 2px solid rgb(145, 140, 140);
+    cursor: pointer;
+}
+.mainImageLeft h1{color: whitesmoke;}
+.mainImageLeft h4{color: gray;}
+
+.mainImageRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 20px;
+}
+.mainImageHeader{
+    color: whitesmoke;
+    padding: 32px;
+}
+.innerMainImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(67, 65, 65);
+    border-radius: 11px;
+}
+.innerMainImage:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+.innerMainImage img{
+    width: 200px;
+    border-top-left-radius: 202px;
+    border-bottom-left-radius: 0;
+}
+
+/* GAMES */
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(41, 40, 40);
+   
+}
+#gamesCard{
+    margin-top: 25px;
+}
+
+.card-group{
+    display: flex;
+    justify-content: space-evenly;
+    height: 450px;
+    background-color: rgb(41, 40, 40);
+}
+#riotForge{
+   color: whitesmoke;
+    margin-top: 25px;
+}
+
+.gamesImage{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    background-color: black;
+}
+.gamesLogo{
+    width: 80px;
+    height: 80px;
+    margin-top: 150px;
+    
+}
+.gamesLogo1{
+    width: 80px;
+    height: 80px;
+    margin-top: 150px;
+}
+.gamesLogo2{
+    width: 100%;
+}
+.siteMain2{
+    padding-top: 50px;
+    background-color: rgb(41, 40, 40);
+}
+#oyunlar{
+    color: whitesmoke;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+  
+}
+
+.siteMain3{
+    padding-top: 50px;
+    background-color: rgb(41, 40, 40);
+    color: whitesmoke;
+    border: none;
+}
+#eSports{
+    margin-left: 50px;
+    font-size: 3rem;
+}
+
+.siteMain4{
+    
+    padding-top: 50px;
+    background-color: rgb(41, 40, 40);
+    color: whitesmoke;
+}
+#enterT{
+    margin-left: 50px;
+    font-size: 3rem;
+}
+.games{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+  
+}
+.gamesImage4{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    height: 500px;
+    padding-top: 50px
+    
+}
+
+.siteMain5{
+    padding-top: 50px;
+    background-color: rgb(41, 40, 40);
+    color: whitesmoke;
+}
+.card-group{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center  ;
+}
+.card1{
+    display: flex;
+    
+}
+.card2{
+    display: flex;
+}
+.card3{
+    display: flex;
+}
+#riotForge{
+    display: inline-flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 3rem;
+    height: 50px;
+}
+
+.siteMain6{
+    display: flex;
+    height: 587px;
+}
+
+.beyazBolum{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 550px;
+}
+
+#we{
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    height: 100px;
+   
+}
+
+.button{
+    display: flex;
+    width: 554px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    width: 250px;
+    height: 150px;
+    border: none;
+}
+#btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    width: 250px;
+    height: 150px;
+    border: none;
+}
+
+#btn-sayi{
+    text-align: center;
+    font-size: 4rem;
+}
+
+#btn-yazi{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(88, 87, 87);
+}
+
+#btn-sayi1{
+    text-align: center;
+    font-size: 4rem;
+}
+#btn-yazi1{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(88, 87, 87)
+}
+
+#new1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 70px;
+    border-radius: 17px;
+    border: 0;
+    background:linear-gradient(to right,rgb(122, 5, 5),rgb(194, 48, 48));
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+#team{
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    font-size: 23px;
+    color: rgb(146, 140, 140);
+}
+#footerBolum{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+    background-color: rgb(41, 40, 40);
+    cursor: pointer;
+    color: rgb(131, 132, 133);
+    border-bottom: 1px solid  rgb(131, 132, 133);
+    
+}
+#minifedLogo2{
+    width: 30px;
+    height: 30px;
+}
+#socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  
+}
+
+.footerAltYazi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 40, 40);
+    height: 110px;
+    
+}
+#kucukYazi{
+    padding-left: 50px;
+    font-size: 13px;
+    color: rgb(131, 132, 133);
+}
+#buyukYazi{
+    padding-right: 80px;
+    color: rgb(131, 132, 133);
+    width: 237px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
